@@ -1,0 +1,119 @@
+@import 'keyframes.css'; 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.header {
+    height: 100px;
+    background: rgb(100,150,200);
+    animation: changeColorHeader 4s infinite linear;
+    transition: background 1s;
+}
+.main {
+    flex-grow: 1;
+    padding: 20px 50px;
+    position: relative;
+}
+section {
+    position: relative;
+}
+.block-content {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* animation: changeColor 4s ease infinite; */
+    background: green;
+    animation-name: moveCircle;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: runing;
+    position: relative;
+    left: 0;
+}
+.wrapper {
+    position: absolute;
+    top: 147px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(100,100,150, 0.8);
+}
+
+/* Анимация при наведении на другой элемент  */
+.block-title:hover ~ .block-content{
+    /* animation-name: moveCircle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal; */
+    animation-play-state: paused;
+}
+
+.footer {
+    height: 100px;
+    background: rgb(58, 82, 105);
+}
+
+
+.container *{
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+}
+.container div{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+}
+.container div:hover::before{
+    content: "";
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    background-image: conic-gradient(
+        #fdcaff,
+        #fca3ff,
+        #fb84ff,
+        #fb84ff,
+        #f957ff,
+        #f700ff,
+        #f700ff
+    );
+    -webkit-animation: spin 1.5s infinite linear;
+            animation: spin 1.5s infinite linear;
+}
+
+.container div:after{
+    position: absolute;
+    content: "Gradient-worm";
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: #ffffff;
+    background-color: #1C1B29;
+    height: 93%;
+    width: 93%;
+    top: 3.5%;
+    left: 3.5%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

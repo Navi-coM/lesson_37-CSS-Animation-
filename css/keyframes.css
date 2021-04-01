@@ -1,0 +1,70 @@
+@keyframes changeColorHeader{
+    0% {
+        /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+        background: rgb(100,120,130);
+    }
+    33% {
+        /* background: linear-gradient(90deg, rgb(10, 4, 119) 0%, rgb(14, 14, 187) 35%, rgb(47, 215, 248) 100%); */
+        background: rgb(61, 77, 85);
+    }
+    66% {
+        /* background: linear-gradient(90deg, rgb(16, 8, 158) 0%, rgb(34, 34, 224) 35%, rgb(88, 214, 240) 100%); */
+        background: rgb(37, 52, 59);
+    }
+    75% {
+        /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+        background: rgb(28, 45, 53);
+    }
+    100% {
+        /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+        background: rgb(00,120,130);
+    }
+}
+@keyframes moveCircle {
+    0% {
+        left: 0px;
+    }
+    50% {
+        /* border-radius: 0; */
+        /* left: 50px; */
+    } 
+    100% {
+        left: 500px;
+    }
+}
+@keyframes changeColor {
+    0% {
+        background: cornflowerblue;
+        
+    }
+    25% {
+        background: rgb(162, 178, 206);
+        
+    }
+    50% {
+        background: rgb(186, 204, 87);
+        
+    }
+    75% {
+        background: rgb(235, 35, 35);
+        
+    }
+    100% {
+        background: cornflowerblue;
+         
+    }
+}
+
+
+@-webkit-keyframes spin{
+    100%{
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+}
+@keyframes spin{
+    100%{
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+}
