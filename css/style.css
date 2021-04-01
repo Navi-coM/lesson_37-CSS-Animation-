@@ -16,6 +16,14 @@ body {
     background: rgb(100,150,200);
     animation: changeColorHeader 4s infinite linear;
     transition: background 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-title {
+    font-size: 28px;
+    font-family: sans-serif;
+    color: #ffc;
 }
 .main {
     flex-grow: 1;
